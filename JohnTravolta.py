@@ -3,7 +3,12 @@
 
 def hitung_gaji(work_time):
     salary = work_time * 15_000
-    if work_time > 40:
+
+    if work_time == 0:
+        total_salary = 0
+        return total_salary
+
+    elif work_time > 40:
         overtime = work_time - 40
         default = work_time - overtime
 
