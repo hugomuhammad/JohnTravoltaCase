@@ -26,8 +26,10 @@ def bisa_tabung(work_time, spending):
     if salary > spending:
         tabungan = salary - spending
         print('Bisa menabung sebanyak: ', tabungan)
-    else:
+    elif salary == spending:
         print('tidak bisa menabung')
+    else:
+        print('cari tambahan')
 
 
 jam_kerja = int(input('Masukkan jam kerja dalam seminggu: '))
