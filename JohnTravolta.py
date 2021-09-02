@@ -33,3 +33,13 @@ def bisa_tabung(work_time, spending):
     else:
         s = 'cari tambahan'
         return s
+    
+if __name__ == '__main__':
+
+    jam_kerja = int(input('\nMasukkan jam kerja dalam seminggu: '))
+    pengeluaran = int(input('Masukkan pengeluaran: '))
+
+    Tabungan = bisa_tabung(jam_kerja, pengeluaran)
+    gaji = hitung_gaji(jam_kerja)
+    print('Total gaji: ', gaji)
+    print(Tabungan)
